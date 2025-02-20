@@ -1,0 +1,24 @@
+{
+	"name" : "Datasets Test Report",
+	"description" : "Test Result Report",
+	"enabled" : true,
+	"permission" : "customer_view",
+	"cache_max_age" : "600",
+	"parameters" : {
+		"launch" : {
+			"required" : false,
+			"default_value" : "6"
+		}
+	},
+	"datasets": {
+		"main": {
+			"processor" : "database",
+			"database_id" : "lt27",
+			"sql_file" : "summary.sql"
+		}
+	},
+	"post" : {
+		"processor" : "sql",
+		"sql_file" : "post.sql"
+	}	
+}
