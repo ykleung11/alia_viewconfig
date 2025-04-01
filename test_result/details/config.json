@@ -8,6 +8,10 @@
 		"launch" : {
 			"required" : false,
 			"default_value" : "6"
+		},
+		"param1" : {
+			"required" : false,
+			"default_value" : "6"
 		}
 	},
 	"datasets": {
