@@ -4,20 +4,10 @@
 	"enabled" : true,
 	"permission" : "customer_view",
 	"cache_max_age" : "600",
-	"parameters" : {
-		"launch" : {
-			"required" : false,
-			"default_value" : "6"
-		},
-		"param1" : {
-			"required" : false,
-			"default_value" : "6"
-		}
-	},
 	"datasets": {
 		"main": {
 			"processor" : "database",
-			"database_id" : "lt27",
+			"db_url" : "sqlite:///${view_config_dir}/ltdatabase_27.db",
 			"sql_file" : "summary.sql"
 		}
 	},
